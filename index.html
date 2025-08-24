@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MMR Interior Design</title>
+    <title>MMR Interior Decor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -22,16 +22,50 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom CSS to fix mobile scrolling issue -->
+    <style>
+      @media (max-width: 767.98px) {
+        .home-slider .slider-item {
+          height: 60vh !important; /* Reduce height for mobile */
+          background-size: cover !important;
+          background-position: center !important;
+          overflow: hidden;
+        }
+        .home-slider .slider-item .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5); /* Ensure overlay covers only the slider */
+          z-index: 1;
+        }
+        .home-slider .slider-text {
+          position: relative;
+          z-index: 2;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .home-slider .slider-text .text {
+          transform: translateY(0) !important; /* Override scrollax animation for mobile */
+          opacity: 1 !important;
+        }
+        .js-fullheight {
+          height: auto !important; /* Prevent full viewport height on mobile */
+        }
+      }
+    </style>
   </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">MMR Interior Design</a>
+	      <a class="navbar-brand" href="index.html">MMR Interior Decor</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -55,8 +89,6 @@
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We Create Amazing Architecture Designs</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">At MMR Interior Design, "We Create Amazing Architectural Designs for This Project" embodies our passion for delivering awe-inspiring and innovative spaces. Our skilled team of architects and designers is dedicated to pushing the boundaries of creativity, ensuring that each project is a testament to exceptional architecture.</p>
             
           </div>
         </div>
@@ -68,8 +100,6 @@
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Virtually Build Your House</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">At MMR Interior Design, "Virtually Build Your House in This Project" signifies our commitment to leveraging cutting-edge technology to bring your dream home to life. Our advanced virtual design approach allows you to visualize and experience your space before it's physically constructed, ensuring that every detail aligns with your vision.</p><p>
           </div>
         </div>
         </div>
@@ -97,7 +127,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Carefully Planned</h3>
-                <p>At MMR Interior Design, our commitment to a well-thought-out plan is aimed at delivering results that surpass expectations. Experience the difference of a project "Carefully Planned," where your vision is brought to life with meticulous care and expertise, creating a space that is both visually stunning and perfectly aligned with your objectives.</p>
+                <p>At MMR Interior Decor, our commitment to a well-thought-out plan is aimed at delivering results that surpass expectations. Experience the difference of a project "Carefully Planned," where your vision is brought to life with meticulous care and expertise, creating a space that is both visually stunning and perfectly aligned with your objectives.</p>
               </div>
             </div>    
           </div>
@@ -129,7 +159,7 @@
 	            </div>
 	          </div>
 	          <div class="pl-md-5 ml-md-5 mb-5">
-							<p>MMR Interior Design is a visionary firm dedicated to transforming spaces into captivating environments that harmonize functionality with aesthetic appeal. With a passion for creating interiors that reflect our clients' unique personalities and lifestyles, MMR Interior Design seamlessly blends innovation and timeless elegance. Our team of seasoned designers brings a wealth of experience to every project, ensuring a meticulous attention to detail and a commitment to surpassing expectations. At MMR Interior Design, we believe in the power of design to elevate living and working spaces. From conceptualization to execution, we collaborate closely with our clients, translating their aspirations into stunning, customized interiors. Whether it's residential, commercial, or hospitality design, we pride ourselves on delivering solutions that not only enhance the visual appeal but also optimize spatial functionality. MMR Interior Design invites you to embark on a journey of transformation, where creativity meets functionality, and dreams come to life within the confines of artfully crafted spaces.</p>
+							<p>MMR Interior Decor is a visionary firm dedicated to transforming spaces into captivating environments that harmonize functionality with aesthetic appeal. With a passion for creating interiors that reflect our clients' unique personalities and lifestyles, MMR Interior Decor seamlessly blends innovation and timeless elegance. Our team of seasoned designers brings a wealth of experience to every project, ensuring a meticulous attention to detail and a commitment to surpassing expectations. At MMR Interior Decor, we believe in the power of design to elevate living and working spaces. From conceptualization to execution, we collaborate closely with our clients, translating their aspirations into stunning, customized interiors. Whether it's residential, commercial, or hospitality design, we pride ourselves on delivering solutions that not only enhance the visual appeal but also optimize spatial functionality. MMR Interior Decor invites you to embark on a journey of transformation, where creativity meets functionality, and dreams come to life within the confines of artfully crafted spaces.</p>
 							</div>
 					</div>
 				</div>
@@ -199,12 +229,64 @@
     	</div>
     	<div class="container-wrap">
     		<div class="row no-gutters">
+				<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/p_7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<!-- <div class="text">
+	    					<h3>Hall Interior Design in Banglore</h3>
+	    				</div> -->
+	    				<a href="images/p_7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div><div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/p_8.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<!-- <div class="text">
+	    					<h3>Hall Interior Design in Banglore</h3>
+	    				</div> -->
+	    				<a href="images/p_8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div><div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/p_9.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<!-- <div class="text">
+	    					<h3>Hall Interior Design in Banglore</h3>
+	    				</div> -->
+	    				<a href="images/p_9.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div><div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/p_10.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<!-- <div class="text">
+	    					<h3>Hall Interior Design in Banglore</h3>
+	    				</div> -->
+	    				<a href="images/p_10.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+    			</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="project">
+	    				<img src="images/p_11.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<!-- <div class="text">
+	    					<h3>Hall Interior Design in Banglore</h3>
+	    				</div> -->
+	    				<a href="images/p_11.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    					<span class="icon-expand"></span>
+	    				</a>
+    				</div>
+				</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
 	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
+	    				<!-- <div class="text">
 	    					<h3>Hall Interior Design in Banglore</h3>
-	    				</div>
+	    				</div> -->
 	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -213,9 +295,9 @@
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
 	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
+	    				<!-- <div class="text">
 	    					<h3>Bedroom Interior Design in Banglore</h3>
-	    				</div>
+	    				</div> -->
 	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -224,9 +306,9 @@
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
 	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
+	    				<!-- <div class="text">
 	    					<h3>Kitchen Interior Design in Banglore</h3>
-	    				</div>
+	    				</div> -->
 	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -235,9 +317,9 @@
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
 	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
-	    				<div class="text">
+	    				<!-- <div class="text">
 	    					<h3>Living Room Interior Design in Banglore</h3>
-	    				</div>
+	    				</div> -->
 	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -259,8 +341,8 @@
 	            </div>
 	          </div>
 	          <div class="pr-md-5 mr-md-5">
-							<p>Our process involves a harmonious blend of creativity and precision, where innovative ideas seamlessly come to life through careful planning and execution. At MMR Interior Design, we recognize the significance of your project, and our pledge to perfection is reflected in our pursuit of excellence in every aspect.</p>
-							<p>From conceptualization to the finishing touches, we strive to exceed expectations by creating interiors that not only meet your vision but surpass it. Trust MMR Interior Design to bring perfection to your project, transforming your space into a masterpiece that harmonizes aesthetics with functionality. Your vision, our dedication, and the pursuit of perfection—welcome to a design experience like no other.</p>
+							<p>Our process involves a harmonious blend of creativity and precision, where innovative ideas seamlessly come to life through careful planning and execution. At MMR Interior Decor, we recognize the significance of your project, and our pledge to perfection is reflected in our pursuit of excellence in every aspect.</p>
+							<p>From conceptualization to the finishing touches, we strive to exceed expectations by creating interiors that not only meet your vision but surpass it. Trust MMR Interior Decor to bring perfection to your project, transforming your space into a masterpiece that harmonizes aesthetics with functionality. Your vision, our dedication, and the pursuit of perfection—welcome to a design experience like no other.</p>
 							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
@@ -273,7 +355,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">MMR Interior Design</h2>
+              <h2 class="ftco-heading-2">MMR Interior Decor</h2>
 			  <img src="images/CEO.jpg" class="circlular-image" alt="Colorlib Template" style="border-radius: 50%; width: 230px; height: 230px;" /><br>
 			  <span style="color: white; font-family: Consolas, Monaco, monospace; font-size: 1.3em; padding-left:20%;">Manish Kumar</span>
 
@@ -321,8 +403,10 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-
-          
+          </div>
+        </div>
+      </div>
+    </footer>
     
   
 
